@@ -1,0 +1,455 @@
+header {
+    height: 80px;
+    background-image: linear-gradient(to right, #557ca3, rgb(131, 177, 184));
+}
+
+header .head_box {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    color: #fff;
+}
+.head_box .head_right {
+    width: 80px;
+    height: 100%;
+    position: relative;
+}
+.head_right>.iconfont {
+    margin-right: 10px;
+}
+.head_right:hover .triangle{
+    display: block;
+}
+.head_right:hover .message{
+    height: 230px;
+}
+.head_right .triangle {
+    border: 10px solid #fff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    display: none;
+}
+.head_right .message {
+    width: 180px;
+    height: 0;
+    box-shadow: 0 5px 5px #ccc;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 99;
+    transition: height .3s;
+    color: #4b4b4b;
+    overflow: hidden;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.message>div:hover {
+    color: #557ca3;
+}
+.message .logout {
+    position: absolute;
+    font-size: 12px;
+    top: -10px;
+    right: 10px;
+}
+.message .balance {
+    font-size: 20px;
+    margin-top: 25px;
+}
+.message .queue {
+    font-size: 20px;
+    
+}
+.message .suggestion, .notice {
+    font-size: 14px;
+}
+.message .notice .iconfont {
+    font-size: 18px;
+}
+
+.head_box .money_container,.suggest_container,.notices_container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.head_box .close {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #444444;
+    opacity: .7;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 100;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.head_box .close:hover {
+    opacity: 1;
+}
+.head_box .money ,.suggest,.notices {
+    position: relative;
+    color: #868686;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.money .balance span:first-child{
+    font-size: 25px;
+}
+.money .recharge .iconfont {
+    position: absolute;
+    top: 125px;
+    left: 25px;
+}
+.money .recharge input {
+    padding-left: 18px;
+}
+.head_box button {
+    width: 80px;
+    border-radius: 80px;
+    background-color: #409eff;
+    border: none;
+    float: right;
+    margin-top: 20px;
+}
+.notices .iconfont {
+    font-size: 20px;
+}
+.notices p {
+    text-indent: 2em;
+    text-align: start;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+nav {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    z-index: 9;
+}
+
+nav .nav_left .nav_item {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+nav .nav_right {
+    position: fixed;
+    right: 150px;
+    bottom: 100px;
+}
+
+.nav_right>div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #8686867c;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.nav_right>div:hover {
+    background-color: #868686;
+}
+.nav_right .cart .iconfont{
+    display: inline-block;
+    width: 100%;
+}
+.nav_right .cart .num_tips {
+    position: fixed;
+    right: 145px;
+    display: inline-block;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #fb4e44;
+}
+.nav_right .gotop {
+    visibility: hidden;
+    transition: visibility .5s;
+}
+.nav_right .cart_box {
+    width: 285px;
+    position: fixed;
+    bottom: 180px;
+    right: 210px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    color: #444444;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 25px;
+    cursor: auto;
+    overflow: auto;
+}
+
+.cart_box ul {
+    max-height: 324px;
+}
+.cart_item {
+    position: relative;
+    border-top: 1px solid #f1f1f1;
+    width: 265px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.cart_item img{
+    vertical-align: middle;
+    height: 60px;
+}
+.cart_item .title {
+    position: absolute;
+    top: -10px;
+    left: 100px;
+
+}
+.cart_item .price {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: #fb4e44;
+}
+.cart_item .cart_counter {
+    display: inline-block;
+}
+.cart_counter span{
+    color: #868686;
+    cursor: pointer;
+}
+
+.cart_box .cart_submit {
+    border-top: 1px solid #f1f1f1;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cart_submit .clear {
+    position: absolute;
+    left: 10px;
+    font-size: 12px;
+    color: #868686;
+    cursor: pointer;
+}
+.cart_submit button {
+    width: 80px;
+    border-radius: 80px;
+    background-color: #409eff;
+    border: none;
+    margin-left: 10px;
+}
+.cart_submit .total>span {
+    color: #fb4e44;
+    font-size: 14px;
+}
+
+section {
+    width: 100%;
+}
+
+section .food_box {
+    width: 100%;
+}
+
+section .food_box .food_item {
+    box-sizing: border-box;
+    float: left;
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    margin: 30px 0 0 30px;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.food_item:hover {
+    transform: translate(0, -5px);
+}
+
+.food_item img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.food_item .title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.food_item .sales {
+    color: rgb(100, 93, 93);
+    line-height: 35px;
+}
+
+.food_item .price {
+    font-size: 24px;
+    color: #fb4e44;
+    margin-right: 4px;
+}
+
+.food_item .num {
+    color: #a9a9a9;
+}
+
+.food_item del {
+    color: #a9a9a9;
+}
+
+.food_card_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.food_card_container .food_card {
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 500px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.food_card img {
+    width: 300px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.food_card .title {
+    position: absolute;
+    top: 30px;
+    left: 340px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.food_card .price {
+    font-size: 24px;
+    color: #fb4e44;
+    margin-right: 4px;
+}
+
+.food_card .num {
+    color: #a9a9a9;
+}
+
+.food_card del {
+    color: #a9a9a9;
+}
+
+.food_card .sales {
+    color: rgb(100, 93, 93);
+    line-height: 35px;
+}
+
+.food_card .detail {
+    position: absolute;
+    top: 70px;
+    left: 340px;
+    width: 140px;
+    line-height: 25px;
+}
+
+.food_card .counter {
+    display: flex;
+    width: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.counter button {
+    height: 42px;
+    width: 50px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(131, 177, 184);
+    border-radius: 0;
+
+}
+
+.counter span {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.food_card .close{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #444444;
+    opacity: .7;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 100;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.food_card .close:hover{
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}

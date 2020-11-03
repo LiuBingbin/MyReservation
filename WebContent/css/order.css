@@ -1,0 +1,62 @@
+.order_box {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    min-width: 500px;
+    
+}
+
+.order_box table {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+table img {
+    width: 80px;
+}
+
+table th, td {
+    width: 17%;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    
+}
+
+table th {
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+table td>p {
+    font-size: 14px;
+    width: 100px;
+    height: 50px;
+}
+.order_box .order_submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 80px;
+}
+.order_submit .total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5%;
+}
+.order_submit .total span {
+    font-weight: normal;
+    color: #fb4e44;
+}
+.order_submit .submit button{
+    width: 80px;
+    border-radius: 80px;
+    background-color: #409eff;
+    border: none;
+    margin-top: 10px;
+}

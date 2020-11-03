@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="head_box w">
+            <h1>饭堂点餐</h1>
+            <div class="head_right">
+                <span class="iconfont">&#xe61e;</span>
+                <span class="user"></span>
+                <div class="triangle"></div>
+                <div class="message">
+                    <div class="logout">退出登录</div>
+                    <div class="balance">
+                        <span>¥0</span>
+                        <span class="iconfont">&#xe619;</span>
+                    </div>
+                    <div class="queue">取餐号：<span>未订餐</span></div>
+                    <div class="suggestion">
+                        <span>意见反馈</span>
+                        <span class="iconfont">&#xe65f;</span>
+                    </div>
+                    <div class="notice">
+                        <span>公告栏</span>
+                    </div>
+                </div>
+            </div>
+            <div class="money_container">
+                <div class="money">
+                    <div class="balance">
+                        <span>余额：¥0.0</span>
+                    </div>
+                    <div class="card">
+                        <span class="bank">工商银行</span>
+                        <span class="card_num">**** 8125</span>
+                        <span class="iconfont">&#xe618;</span>
+                    </div>
+                    <div class="recharge .clearfix">
+                        <span class="iconfont">&#xe614;</span>
+                        <input type="number" placeholder="请输入存入金额">
+                        <button>立即充值</button>
+                    </div>
+                </div>
+                <div class="close">×</div>
+            </div>
+            <div class="suggest_container">
+                <div class="suggest">
+                    <textarea cols="40" rows="10" style="resize: none;" placeholder="输入您的意见或建议"></textarea>
+                    <button>提交</button>
+                </div>
+                <div class="close">×</div>
+            </div>
+            <div class="notices_container">
+                <div class="notices">
+                    <span class="iconfont">公告&#xe60b;</span>
+                    <p>感谢使用本系统！感谢使用本系统！感谢使用本系统！感谢使用本系统！感谢使用本系统！感谢使用本系统！</p>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+
+
+    </header>
+    <nav>
+        <div class="nav_right">
+            <div class="cart">
+                <span class="iconfont">&#xe652;</span>
+                <span class="num_tips">0</span>
+                <div class="cart_box" style="display:none">
+                    <ul>
+                    </ul>
+                    <div class="cart_submit">
+                        <span class="clear">删除全部</span>
+                        <div class="total">合计：<span>¥0</span></div>
+                        <button>结算</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gotop"><span class="iconfont">&#xe609;</span></div>
+        </div>
+    </nav>
+    <section class="w">
+        <ul class="food_box clearfix">
+        </ul>
+        <div class="food_card_container">
+        </div>
+
+    </section>
+    <footer></footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+header {
+    height: 80px;
+    background-image: linear-gradient(to right, #557ca3, rgb(131, 177, 184));
+}
+
+header .head_box {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    color: #fff;
+}
+nav {
+    height: 100%;
+    position: absolute;
+}
+nav .nav_left {
+    width: 150px;
+    height: 100%;
+    background-color: #557ca3;
+}
+.nav_left ul{
+    padding-top: 20px;
+}
+.nav_left ul li{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav_left ul li:hover,li.active {
+    background-color: rgb(131, 177, 184);
+}
+
+section {
+    height: 100%;
+}
+section .box {
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.box table {
+    margin-top: 40px;
+    width: 800px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 20px;
+    table-layout: fixed;
+}
+.box table th{
+    border-bottom: 1px solid #ccc;
+}
+.box table td p{
+    font-size: 12px;
+    width: 100%;
+    line-height: normal;
+}
+
+.box table td input {
+    width: 100px;
+}

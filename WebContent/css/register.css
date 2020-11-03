@@ -1,0 +1,64 @@
+.register_container {
+    background: #557ca3;
+    height: 100%;
+}
+
+.register_box {
+    width: 450px;
+    height: 550px;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgb(109, 109, 109);
+}
+.register_title{
+    text-align: center;
+    color: #3a7bbd;
+}
+.register_form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 28px;
+    position: absolute;
+    bottom: 0;
+}
+.register_form span{
+    color: rgb(253, 54, 54);
+    margin-right: 5px;
+}
+.register_form .register_input{
+    height: 400px;
+}
+.register_form .register_input input{
+    margin-bottom: 15px;
+}
+
+.register_form .register_btns {
+    display: flex;
+    justify-content: flex-end;
+}
+.register_form .register_btns button{  
+    margin-left: 10px;
+}
+.register_form .register_btns button:first-child{
+    background-color: #409eff;
+    border-color: #409eff;
+}
+.register_form .register_btns button:last-child{
+    background-color: #909399;
+    border-color: #909399;
+}
+.go_login{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.go_login a{
+    text-decoration: none;
+    color: #409eff;
+}

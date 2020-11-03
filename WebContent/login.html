@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div class="login_container">
+        <div class="login_box">
+            <div class="avatar_box">
+                <img src="./img/avatar.jpg" alt="" />
+            </div>
+            <div class="login_form">
+                <div class="login_input">
+                    <input class="name_input" type="text" placeholder="请输入用户名">
+                    <input class="pwd_input" type="password" placeholder="请输入密码">
+                </div>
+                <div class="login_radio">
+                    <input type="radio" name="roles" value="user" checked>用户
+                    <input type="radio" name="roles" value="admin">管理员
+                </div>
+                <div class="login_btns">
+                    <button>登录</button>
+                    <button>重置</button>
+                </div>
+            </div>
+            <div class="go_register"><a href="./register.html">还没有账号？点此处去注册</a></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
